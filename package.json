@@ -1,0 +1,17 @@
+{
+  "name": "https-server-tester",
+  "version": "1.0.0",
+  "description": "A simple Node.js HTTPS server with testing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js",
+    "gen-certs": "openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes -subj '/CN=localhost'"
+  },
+  "keywords": ["https", "server", "testing"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
